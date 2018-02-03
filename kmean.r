@@ -4,5 +4,5 @@ geneData <- read.table("/Users/ericvogel/Documents/Johns_Hopkins/Principles_of_B
 #Manipulate the data so that the columns represent the genes for all the samples
 geneData <- t(geneData)
 
-#Use kmean function to group the data into 2 clusters
+#Use kmeans function to group the data into 2 clusters
 tissueCluster <- kmeans(geneData[2:9, 2:11714], 2, nstart = 25)
